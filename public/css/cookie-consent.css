@@ -1,0 +1,228 @@
+body {
+    background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+* {
+    font-family: 'Sora', sans-serif;
+}
+
+.lcc-text {
+    font-size: 16px;
+    margin: 0 0 22px
+}
+
+.lcc-button {
+    display: inline-block;
+    background: none;
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #111;
+    outline: none;
+    font-size: inherit;
+    padding: 6px 15px;
+    cursor: pointer;
+    margin: 1px 0;
+    transition: color .2s ease, background-color .2s ease, border-color .2s ease
+}
+
+.lcc-button:focus,
+.lcc-button:hover {
+    background: #777;
+    border-color: #777
+}
+
+.lcc-button.lcc-button--link {
+    color: inherit;
+    background: transparent;
+    border-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    text-decoration: underline
+}
+
+.lcc-button.lcc-button--link:focus,
+.lcc-button.lcc-button--link:hover {
+    background: transparent;
+    border-color: transparent;
+    text-decoration: none
+}
+
+.lcc-button.lcc-button--link+.lcc-button.lcc-button--link {
+    margin-top: 0
+}
+
+.lcc-label {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: baseline
+}
+
+.lcc-label[for] {
+    cursor: pointer
+}
+
+.lcc-label>* {
+    margin-right: 10px
+}
+
+
+/* .lcc-backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 10000;
+    transition: opacity .2s ease-in-out
+} */
+
+.lcc-modal {
+    /* position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 475px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    z-index: 10001;
+    padding: 30px */
+    position: fixed;
+    min-width: 100%;
+    background-color: rgba(255, 255, 255);
+    color: black;
+    text-align: center;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px;
+}
+
+.lcc-modal p {
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-align: left;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.lcc-modal button {
+    background: rgb(0, 42, 255);
+    border: 0;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lcc-modalsetting {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 100%;
+    max-height: 85%;
+    overflow: auto;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    padding: 30px;
+}
+
+.lcc-modalsetting:target {}
+
+.lcc-modalsetting .lcc-modal__close {
+    width: 25px;
+    font-size: 30px;
+    line-height: 1.25;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    background: none;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    transition: color .2s ease;
+}
+
+.lcc-modalsetting .lcc-modal__close:focus,
+.lcc-modalsetting .lcc-modal__close:hover {
+    color: #777
+}
+
+.lcc-modal .lcc-modal__title {
+    font-size: 22px;
+    margin-bottom: 1em
+}
+
+.lcc-modal .lcc-modal__section {
+    margin-bottom: 20px
+}
+
+
+/* .lcc-modal .lcc-modal__actions {
+    margin-top: 30px
+}
+
+.lcc-modal .lcc-modal__actions>* {
+    display: block;
+    margin-top: 8px
+} */
+
+
+/* .lcc-modal.lcc-modal--settings {
+    z-index: 10002
+} */
+
+.lcc-u-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+
+.lcc-u-text-center {
+    text-align: center!important
+}
+
+.cookie-consent {
+    /* backdrop-filter: blur(10px); */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    background-color: rgba(255, 255, 255);
+    color: black;
+    text-align: center;
+    z-index: 1;
+}
+
+.cookie-consent p {
+    font-size: 16px;
+    padding: 1rem 0.5rem 0.375rem 0.5rem;
+}
+
+.cookie-consent button {
+    background: rgb(0, 42, 255);
+    border: 0;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cookie-p {
+    min-width: 60%;
+}

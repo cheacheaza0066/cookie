@@ -138,8 +138,9 @@ body {
     transform: translate(-50%, -50%);
     width: 700px;
     max-width: 100%;
-    max-height: 80%;
-    overflow: auto;
+    max-height: 95%;
+    /* overflow: auto; */
+    overflow-x: hidden;
     background: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
     z-index: 10001111;
@@ -221,11 +222,16 @@ li {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+    /* overflow: auto; */
 }
 
 .side-menu li {}
 
 .side-menu ul li:hover {
+    background: white;
+}
+
+.side-menu a:hover {
     background: white;
 }
 
@@ -259,4 +265,9 @@ button {
 .h1-head {
     margin-top: 35px;
     margin-left: 125px;
+}
+
+.right-menu {
+    /* display: none; */
+    /* display: block; */
 }

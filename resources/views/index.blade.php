@@ -32,7 +32,7 @@
             <div class="col-md-8">
                 <div class="lcc-modal__content">
                     <p class="ms-0 ">เราใช้คุกกี้เพื่อพัฒนาประสิทธิภาพ และประสบการณ์ที่ดีในการใช้เว็บไซต์ของคุณ 
-                        คุณสามารถศึกษารายละเอียดได้ที่ นโยบายคุ้กกี้ และสามารถจัดการความเป็นส่วนตัวเองได้ของคุณ
+                        คุณสามารถศึกษารายละเอียดได้ที่ นโยบายคุ้กกี้และสามารถจัดการความเป็นส่วนตัวเองได้ของคุณ
                         ได้เองโดยคลิกที่ปุ่มตั้งค่า</h2>
 
                     </p>
@@ -41,8 +41,9 @@
             <div class="col-md-4">
                 <div class="lcc-modal__actions">
 
+                    
                     <button id="btn-b" type="button" class="lcc-button lcc-button--link js-lcc-settings-toggle" style="margin-left: 120px">
-                         <p class="fs-6" style="color: green" data-bs-toggle="modal" data-bs-target="#exampleModal">ตั้งค่าคุกกี้</p>
+                         <p class="fs-5" style="color: rgb(8, 170, 8)" data-bs-toggle="modal" data-bs-target="#exampleModal">ตั้งค่าคุกกี้</p>
                     </button>
                     <button type="button" class="mb-2 lcc-button js-lcc-accept btn btn-primary btn-lg" style="margin-left: 50px">
                        ยอมรับ
@@ -59,9 +60,7 @@
 
 
     <div role="dialog" aria-labelledby="lcc-modal-settings-label" aria-describedby="lcc-modal-settings-desc" 
-                aria-modal="true" class="lcc-modalsetting lcc-modal--settings js-lcc-modal js-lcc-modal-settings" style="display: none;"
-                
-                >
+                aria-modal="true" class="lcc-modalsetting lcc-modal--settings js-lcc-modal js-lcc-modal-settings" style="display: none;">
 
                 <button id="close-btn" class="lcc-modal__close js-lcc-settings-toggle" type="button">
                     <span class="lcc-u-sr-only">
@@ -70,89 +69,160 @@
                     &times;
                 </button>
                 
-                <div class="lcc-modal__content">
-                    <div class="lcc-modal__content">
-                            <h1 id="lcc-modal-settings-label" class="lcc-modal__title mt-3 fs-5"><b>ตั้งค่าความเป็นส่วนตัว</b></h1>
-                            <p id="lcc-modal-settings-desc" class="lcc-text">
-                                คุณสามารถเลือกการตั้งค่าคุกกี้โดยเปิด/ปิด คุกกี้ในแต่ละประเภทได้ตามความต้องการ ยกเว้น คุกกี้ที่จำเป็น
-                            <div class="lcc-modal__section lcc-u-text-center">
+                <div class="lcc-modal__content ">
+                    
+                                <div class="tiledBackground d-flex justify-content-start m-0"  >
+                                    <a href="">
+                                        <img src="{{url('image/sacit.jpg')}}" alt="" class="img-logo">
+
+                                    </a>
+                                        <h1 id="lcc-modal-settings-label" class="h1-head fs-5 text-center"><b>ตั้งค่าความเป็นส่วนตัว</b></h1>
+
+                                </div>
+                            {{-- <h1 id="lcc-modal-settings-label" class="lcc-modal__title mt-3 fs-5 text-center"><b>ตั้งค่าความเป็นส่วนตัว</b></h1> --}}
+                            {{-- <p id="lcc-modal-settings-desc" class="lcc-text">
+                                คุณสามารถเลือกการตั้งค่าคุกกี้โดยเปิด/ปิด คุกกี้ในแต่ละประเภทได้ตามความต้องการ ยกเว้น คุกกี้ที่จำเป็น --}}
+                            {{-- <div class="lcc-modal__section lcc-u-text-center">
                                 <button type="button" class="lcc-button js-lcc-accept btn btn-primary">
                                     ยอมรับทั้งหมด
                                 </button>
-                            </div>
-                                <hr width=100% size=5 >
+                            </div> --}}
+                                <hr class="my-0" width=100% size=3 >
 
-                                <h1 class="mt-3 fs-5"><b>จัดการความเป็นส่วนตัว</b></h1>
+                                {{-- <div class="container"> --}}
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="side-menu">
+                                                        <ul>
+                                                            <li class="mt-3 ">
+                                                                <a style="text-decoration: inherit; color: inherit;"  href="javascript:toggleDiv('div1');">
+                                                                    <span>ความเป็นส่วนตัวของคุณ</span>
+                                                                </a> 
+
+                                                            </li>
+                                                                                  
+                                                            <br>
+                                                            <li>
+                                                                <a class="a-2" style="text-decoration: inherit; color: inherit;"  href="javascript:toggleDiv('div2');">
+                                                                    <span>คุกกี้ที่มีความจำเป็น (Strictly Necessary Cookies)</span>
+                                                                </a>
+                                                            </li>
+                                                            <br>
+                                                            <li>
+                                                                <a class="a-3" style="text-decoration: inherit; color: inherit;" href="javascript:toggleDiv('div3');">
+                                                                    <span>คุกกี้เพื่อการวิเคราะห์และประเมินผลการใช้งาน (Performance Cookies)</span>
+                                                                </a>
+                                                            </li>
+                                                            <br>
+                                                            <li>
+                                                                <a class="a-4" style="text-decoration: inherit; color: inherit;" href="javascript:toggleDiv('div4');">
+                                                                     <span>คุกกี้เพื่อการใช้งานเว็บไซต์ (Functional Cookies)</span>
+                                                                </a>
+                                                            </li>
+                                                            <br>
+                                                            <li>
+                                                                <a class="a-5" style="text-decoration: inherit; color: inherit;" href="javascript:toggleDiv('div5');" >
+                                                                     <span>คุกกี้เพื่อการโฆษณาไปยังกลุ่มเป้าหมาย (Targeting Cookies)</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                            </div>
+                                        </div>
 
 
-                            <div class="lcc-modal__section mt-3">
+                                        <div class="col-md-8 ">
 
-                                <label for="lcc-checkbox-essential" class="lcc-label">
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" id="lcc-checkbox-essential"disabled="disabled" checked>
-                                        <span >คุกกี้ที่มีความจำเป็น (Strictly Necessary Cookies)</span>
-                                        <p class="lcc-text mt-2">
-                                            คุกกี้ประเภทนี้มีความจำเป็นต่อการให้บริการเว็บไซต์ของ สพร. เพื่อให้ท่านสามารถเข้าใช้งานในส่วนต่าง ๆ ของเว็บไซต์ได้ รวมถึงช่วยจดจำข้อมูลที่ท่านเคยให้ไว้ผ่านเว็บไซต์ การปิดการใช้งานคุกกี้ประเภทนี้จะส่งผลให้ท่านไม่สามารถใช้บริการในสาระสำคัญของ สพร. ซึ่งจำเป็นต้องเรียกใช้คุกกี้ได้
-                                        </p>
+                                            <div class="toggle" id="div1" >
+                                                <div class="lcc-modal__section mt-4">
+                                                    <label for="lcc-checkbox-analytics" class="lcc-label">
+                                                        <div class="form-check form-switch">
+                                                            <span><b>ความเป็นส่วนตัวของคุณ</b></span>
+                                                        <p class="lcc-text mt-4 ">
+                                                            คุณสามารถเลือกการตั้งค่าคุกกี้โดยเปิด/ปิด คุกกี้ในแต่ละประเภทได้ตามความต้องการ ยกเว้น คุกกี้ที่จำเป็น 
+                                                        </p>
+                                                    </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="right-menu">
+                                                
+                                                <div class="toggle" id="div2" style="display: none">
+                                                    <div class="lcc-modal__section mt-4">
+                                                        <label for="lcc-checkbox-essential" class="lcc-label">
+                                                            <div class="form-check form-switch">
+                                                                <span style="float: right;" class="text-primary fs-6"><b>เปิดใช้งานตลอดเวลา</b></span>
+                                                                <span >คุกกี้ที่มีความจำเป็น (Strictly Necessary Cookies)</span>
+                                                                <p class="lcc-text mt-4">
+                                                                    คุกกี้ประเภทนี้มีความจำเป็นต่อการให้บริการเว็บไซต์ของ สพร. เพื่อให้ท่านสามารถเข้าใช้งานในส่วนต่าง ๆ ของเว็บไซต์ได้ รวมถึงช่วยจดจำข้อมูลที่ท่านเคยให้ไว้ผ่านเว็บไซต์ การปิดการใช้งานคุกกี้ประเภทนี้จะส่งผลให้ท่านไม่สามารถใช้บริการในสาระสำคัญของ สพร. ซึ่งจำเป็นต้องเรียกใช้คุกกี้ได้
+                                                                </p>
+                                                            </div>
+                                                        </label> 
+                                                    </div>
+                                                </div>
+                                                <div class="toggle" id="div3" style="display: none">
+                                                    <div class="lcc-modal__section mt-4">
+                                                        <label for="lcc-checkbox-analytics" class="lcc-label">
+                                                            <div class="form-check form-switch">
+                        
+                                                            <input style="float: right;" class="form-check-input" type="checkbox" id="lcc-checkbox-analytics">
+                                                            <span>คุกกี้เพื่อการวิเคราะห์และประเมินผลการใช้งาน (Performance Cookies)</span>
+                                                            <p class="lcc-text mt-4">
+                                                                คุกกี้ประเภทนี้ช่วยให้ สพร. ทราบถึงการปฏิสัมพันธ์ของผู้ใช้งานในการใช้บริการเว็บไซต์ของ สพร. รวมถึงหน้าเพจหรื
+                                                                อพื้นที่ใดของเว็บไซต์ที่ได้รับความนิยม ตลอดจนการวิเคราะห์ข้อมูลด้านอื่น ๆ สพร. ยังใช้ข้อมูลนี้เพื่อการปรับปรุงการทำ
+                                                                งานของเว็บไซต์ และเพื่อเข้าใจพฤติกรรมของผู้ใช้งานมากขึ้น ถึงแม้ว่า ข้อมูลที่คุกกี้นี้เก็บรวบรวมจะเป็นข้อมูลที่ไม่สามาร
+                                                                ถระบุตัวตนได้ และนำมาใช้วิเคราะห์ทางสถิติเท่านั้น การปิดการใช้งานคุกกี้ประเภทนี้จะส่งผลให้ สพร. ไม่สามารถทราบป
+                                                                ริมาณผู้เข้าเยี่ยมชมเว็บไซต์ และไม่สามารถประเมินคุณภาพการให้บริการได้                    
+                                                            </p>
+                                                        </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="toggle" id="div4" style="display: none">
+                                                    <div class="lcc-modal__section mt-4">
+                                                        <label for="lcc-checkbox-marketing" class="lcc-label">
+                                                            <div class="form-check form-switch">
+                                                            <input  style="float: right;" class="form-check-input" type="checkbox" id="lcc-checkbox-marketing">
+                                                            <span>คุกกี้เพื่อการใช้งานเว็บไซต์ (Functional Cookies)</span>
+                                                            <p class="lcc-text mt-4">
+                                                                คุกกี้ประเภทนี้จะช่วยให้เว็บไซต์ของ สพร. จดจำตัวเลือกต่าง ๆ ที่ท่านได้ตั้งค่าไว้และช่วยให้เว็บไซต์ส่งมอบคุณสมบัติแล
+                                                                ะเนื้อหาเพิ่มเติมให้ตรงกับการใช้งานของท่านได้ เช่น ช่วยจดจำชื่อบัญชีผู้ใช้งานของท่าน หรือจดจำการเปลี่ยนแปลงการตั้
+                                                                งค่าขนาดฟอนต์หรือการตั้งค่าต่าง ๆ ของหน้าเพจซึ่งท่านสามารถปรับแต่งได้ การปิดการใช้งานคุกกี้ประเภทนี้อาจส่งผลให้เ
+                                                                ว็บไซต์ไม่สามารถทำงานได้อย่างสมบูรณ์</p>
+                                                        </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="toggle" id="div5" style="display: none">
+                                                    <div class="lcc-modal__section mt-4">
+                                                        <label for="lcc-checkbox-analytics" class="lcc-label">
+                                                            <div class="form-check form-switch">
+                                                                <input style="float: right;" class="form-check-input" type="checkbox" id="lcc-checkbox-analytics">
+                                                                <span>คุกกี้เพื่อการโฆษณาไปยังกลุ่มเป้าหมาย (Targeting Cookies)</span>
+                                                                <p class="lcc-text mt-4">
+                                                                    คุกกี้ประเภทนี้เป็นคุกกี้ที่เกิดจากการเชื่อมโยงเว็บไซต์ของบุคคลที่สาม ซึ่งเก็บข้อมูลการเข้าใช้งานและเว็บไซต์ที่ท่
+                                                                    านได้เข้าเยี่ยมชม เพื่อนำเสนอสินค้าหรือบริการบนเว็บไซต์อื่นที่ไม่ใช่เว็บไซต์ของ สพร. ทั้งนี้ หากท่านปิดการใช้
+                                                                    งานคุกกี้ประเภทนี้จะไม่ส่งผลต่อการใช้งานเว็บไซต์ของ สพร. แต่จะส่งผลให้การนำเสนอสินค้าหรือบริการบนเว็บไ
+                                                                    ซต์อื่น ๆ ไม่สอดคล้องกับความสนใจของท่าน                        
+                                                                </p>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </label> 
-                            </div>
-
-                            <div class="lcc-modal__section">
-                                <label for="lcc-checkbox-analytics" class="lcc-label">
-                                    <div class="form-check form-switch">
-
-                                    <input class="form-check-input" type="checkbox" id="lcc-checkbox-analytics">
-                                    <span>คุกกี้เพื่อการวิเคราะห์และประเมินผลการใช้งาน (Performance Cookies)</span>
-                                    <p class="lcc-text">
-                                        คุกกี้ประเภทนี้ช่วยให้ สพร. ทราบถึงการปฏิสัมพันธ์ของผู้ใช้งานในการใช้บริการเว็บไซต์ของ สพร. รวมถึงหน้าเพจหรื
-                                        อพื้นที่ใดของเว็บไซต์ที่ได้รับความนิยม ตลอดจนการวิเคราะห์ข้อมูลด้านอื่น ๆ สพร. ยังใช้ข้อมูลนี้เพื่อการปรับปรุงการทำ
-                                        งานของเว็บไซต์ และเพื่อเข้าใจพฤติกรรมของผู้ใช้งานมากขึ้น ถึงแม้ว่า ข้อมูลที่คุกกี้นี้เก็บรวบรวมจะเป็นข้อมูลที่ไม่สามาร
-                                        ถระบุตัวตนได้ และนำมาใช้วิเคราะห์ทางสถิติเท่านั้น การปิดการใช้งานคุกกี้ประเภทนี้จะส่งผลให้ สพร. ไม่สามารถทราบป
-                                        ริมาณผู้เข้าเยี่ยมชมเว็บไซต์ และไม่สามารถประเมินคุณภาพการให้บริการได้                    
-                                    </p>
-                                </div>
-                                </label>
-                            </div>
-
-                            <div class="lcc-modal__section">
-                                <label for="lcc-checkbox-marketing" class="lcc-label">
-                                    <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="lcc-checkbox-marketing">
-                                    <span>คุกกี้เพื่อการใช้งานเว็บไซต์ (Functional Cookies)</span>
-                                    <p class="lcc-text">
-                                        คุกกี้ประเภทนี้จะช่วยให้เว็บไซต์ของ สพร. จดจำตัวเลือกต่าง ๆ ที่ท่านได้ตั้งค่าไว้และช่วยให้เว็บไซต์ส่งมอบคุณสมบัติแล
-                                        ะเนื้อหาเพิ่มเติมให้ตรงกับการใช้งานของท่านได้ เช่น ช่วยจดจำชื่อบัญชีผู้ใช้งานของท่าน หรือจดจำการเปลี่ยนแปลงการตั้
-                                        งค่าขนาดฟอนต์หรือการตั้งค่าต่าง ๆ ของหน้าเพจซึ่งท่านสามารถปรับแต่งได้ การปิดการใช้งานคุกกี้ประเภทนี้อาจส่งผลให้เ
-                                        ว็บไซต์ไม่สามารถทำงานได้อย่างสมบูรณ์</p>
-                                </div>
-                                </label>
-                            </div>
-
-                            <div class="lcc-modal__section">
-                                <label for="lcc-checkbox-analytics" class="lcc-label">
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" id="lcc-checkbox-analytics">
-                                        <span>คุกกี้เพื่อการโฆษณาไปยังกลุ่มเป้าหมาย (Targeting Cookies)</span>
-                                        <p class="lcc-text">
-                                            คุกกี้ประเภทนี้เป็นคุกกี้ที่เกิดจากการเชื่อมโยงเว็บไซต์ของบุคคลที่สาม ซึ่งเก็บข้อมูลการเข้าใช้งานและเว็บไซต์ที่ท่
-                                            านได้เข้าเยี่ยมชม เพื่อนำเสนอสินค้าหรือบริการบนเว็บไซต์อื่นที่ไม่ใช่เว็บไซต์ของ สพร. ทั้งนี้ หากท่านปิดการใช้
-                                            งานคุกกี้ประเภทนี้จะไม่ส่งผลต่อการใช้งานเว็บไซต์ของ สพร. แต่จะส่งผลให้การนำเสนอสินค้าหรือบริการบนเว็บไ
-                                            ซต์อื่น ๆ ไม่สอดคล้องกับความสนใจของท่าน                        
-                                        </p>
-                                    </div>
-                                </label>
-                            </div>
-                        </div>
+                                {{-- </div> --}}
                     </div>
-                                    <div class="lcc-modal__actions d-flex justify-content-center">
-                                        <button type="button" class="lcc-button js-lcc-settings-save btn btn-primary ">
-                                            บันทึกการตั้งค่า
-                                        </button>
-                                    </div>
-    </div>
+                                                    <hr width=100% size=3  class="mt-0">
+                                                                    
+                          <div class="lcc-modal__actions d-flex justify-content-between">
+                          <button type="button" class="lcc-button js-lcc-accept btn btn-primary ms-4 mb-3 mt-0" style="width: 150px" >ยอมรับทั้งหมด</button>
+                            <button type="button" class="lcc-button js-lcc-settings-save btn btn-primary me-3 mb-3">บันทึกการตั้งค่า</button>
+                            </div>
+            </div>
 
-    <div class="lcc-backdrop js-lcc-backdrop" style="display: none;"></div>
+                                        <div class="lcc-backdrop js-lcc-backdrop" style="display: none;"></div>
 
 
     
@@ -164,6 +234,47 @@
       $('.lcc-modal').css("filter","");
     });
    
+    function toggleDiv(divId) {
+    $("#"+divId).toggle();
+    $('.toggle').not($("#"+divId)).hide();
+}
+
+// $('.a-2').click(function(event){
+//             $('.right-menu').css("display","block");
+//     });
+//     $('.a-3').click(function(){
+//             $('.right-menu').css("display","block");
+//     });
+//     $('.a-4').click(function(){
+//             $('.right-menu').css("display","block");
+//     });
+    
+
+//  $(".button1").click(function(event){
+
+//     $(".section").css("display","none");
+
+//     event.stopPropagation();
+//     if($(".div").css("display") === "none"){
+//         $(".div").css("display","block");
+//     }else{
+//         $(".div").css("display","none");
+//     }
+//   });
+
+//   $(".button2").click(function(event){
+
+//     $(".div").css("display","none");
+
+//     event.stopPropagation();
+//     if($(".section").css("display") === "none"){
+//         $(".section").css("display","block");
+//     }else{
+//         $(".section").css("display","none");
+//     }
+//   });
+
+
     </script>
     <script src="./js/cookie-consent.js"></script>
 </body>

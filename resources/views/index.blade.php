@@ -40,14 +40,14 @@
             </div>
             <div class="col-md-4">
                 <div class="lcc-modal__actions">
-
-                    
                     <button id="btn-b" type="button" class="lcc-button lcc-button--link js-lcc-settings-toggle" style="margin-left: 120px">
-                         <p class="fs-5" style="color: rgb(8, 170, 8)" data-bs-toggle="modal" data-bs-target="#exampleModal">ตั้งค่าคุกกี้</p>
+                         <p class="fs-5" style="color: rgb(8, 170, 8);" data-bs-toggle="modal" data-bs-target="#exampleModal">ตั้งค่าคุกกี้</p>
                     </button>
-                    <button type="button" class="mb-2 lcc-button js-lcc-accept btn btn-primary btn-lg" style="margin-left: 50px">
+                    <button type="button" class="mb-2 lcc-button js-lcc-accept btn btn-primary btn-lg ms-5" style="background-color: #004a80;    border-radius: 2px;
+                    ">
                        ยอมรับ
                     </button>
+                    
                 </div>
             </div>
 
@@ -112,6 +112,7 @@
                                                                 <a class="a-3" style="text-decoration: inherit; color: inherit;" href="javascript:toggleDiv('div3');">
                                                                     <span>คุกกี้เพื่อการวิเคราะห์และประเมินผลการใช้งาน (Performance Cookies)</span>
                                                                 </a>
+
                                                             </li>
                                                             <br>
                                                             <li>
@@ -136,10 +137,11 @@
                                                 <div class="lcc-modal__section mt-4">
                                                     <label for="lcc-checkbox-analytics" class="lcc-label">
                                                         <div class="form-check form-switch">
-                                                            <span><b>ความเป็นส่วนตัวของคุณ</b></span>
-                                                        <p class="lcc-text mt-4 ">
-                                                            คุณสามารถเลือกการตั้งค่าคุกกี้โดยเปิด/ปิด คุกกี้ในแต่ละประเภทได้ตามความต้องการ ยกเว้น คุกกี้ที่จำเป็น 
-                                                        </p>
+                                                                <span><b>ความเป็นส่วนตัวของคุณ</b></span>
+                                                            <p class="lcc-text mt-4 ">
+                                                                คุณสามารถเลือกการตั้งค่าคุกกี้โดยเปิด/ปิด คุกกี้ในแต่ละประเภทได้ตามความต้องการ ยกเว้น คุกกี้ที่จำเป็น 
+                                                            </p>
+                                                        
                                                     </div>
                                                     </label>
                                                 </div>
@@ -200,8 +202,8 @@
                                                                 <input style="float: right;" class="form-check-input" type="checkbox" id="lcc-checkbox-analytics">
                                                                 <span>คุกกี้เพื่อการโฆษณาไปยังกลุ่มเป้าหมาย (Targeting Cookies)</span>
                                                                 <p class="lcc-text mt-4">
-                                                                    คุกกี้ประเภทนี้เป็นคุกกี้ที่เกิดจากการเชื่อมโยงเว็บไซต์ของบุคคลที่สาม ซึ่งเก็บข้อมูลการเข้าใช้งานและเว็บไซต์ที่ท่
-                                                                    านได้เข้าเยี่ยมชม เพื่อนำเสนอสินค้าหรือบริการบนเว็บไซต์อื่นที่ไม่ใช่เว็บไซต์ของ สพร. ทั้งนี้ หากท่านปิดการใช้
+                                                                    คุกกี้ประเภทนี้เป็นคุกกี้ที่เกิดจากการเชื่อมโยงเว็บไซต์ของบุคคลที่สาม ซึ่งเก็บข้อมูลการเข้าใช้งานและเว็บไซต์ที่
+                                                                    ท่านได้เข้าเยี่ยมชม เพื่อนำเสนอสินค้าหรือบริการบนเว็บไซต์อื่นที่ไม่ใช่เว็บไซต์ของ สพร. ทั้งนี้ หากท่านปิดการใช้
                                                                     งานคุกกี้ประเภทนี้จะไม่ส่งผลต่อการใช้งานเว็บไซต์ของ สพร. แต่จะส่งผลให้การนำเสนอสินค้าหรือบริการบนเว็บไ
                                                                     ซต์อื่น ๆ ไม่สอดคล้องกับความสนใจของท่าน                        
                                                                 </p>
@@ -217,8 +219,8 @@
                                                     <hr width=100% size=3  class="mt-0">
                                                                     
                           <div class="lcc-modal__actions d-flex justify-content-between">
-                          <button type="button" class="lcc-button js-lcc-accept btn btn-primary ms-4 mb-3 mt-0" style="width: 150px" >ยอมรับทั้งหมด</button>
-                            <button type="button" class="lcc-button js-lcc-settings-save btn btn-primary me-3 mb-3">บันทึกการตั้งค่า</button>
+                          <button type="button" class="lcc-button js-lcc-accept button ms-4 mb-3 mt-0" style="width: 150px" >ยอมรับทั้งหมด</button>
+                            <button type="button" class="lcc-button js-lcc-settings-save button me-3 mb-3">บันทึกการตั้งค่า</button>
                             </div>
             </div>
 
@@ -235,44 +237,11 @@
     });
    
     function toggleDiv(divId) {
-    $("#"+divId).toggle();
+    $("#"+divId).show();
     $('.toggle').not($("#"+divId)).hide();
+    $()
 }
 
-// $('.a-2').click(function(event){
-//             $('.right-menu').css("display","block");
-//     });
-//     $('.a-3').click(function(){
-//             $('.right-menu').css("display","block");
-//     });
-//     $('.a-4').click(function(){
-//             $('.right-menu').css("display","block");
-//     });
-    
-
-//  $(".button1").click(function(event){
-
-//     $(".section").css("display","none");
-
-//     event.stopPropagation();
-//     if($(".div").css("display") === "none"){
-//         $(".div").css("display","block");
-//     }else{
-//         $(".div").css("display","none");
-//     }
-//   });
-
-//   $(".button2").click(function(event){
-
-//     $(".div").css("display","none");
-
-//     event.stopPropagation();
-//     if($(".section").css("display") === "none"){
-//         $(".section").css("display","block");
-//     }else{
-//         $(".section").css("display","none");
-//     }
-//   });
 
 
     </script>

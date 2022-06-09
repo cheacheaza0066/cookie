@@ -22,7 +22,7 @@ body {
 .lcc-button {
     display: inline-block;
     background: none;
-    /* background-color: #111; */
+    background-color: #004a80;
     color: #fff;
     border: 1px solid #111;
     outline: none;
@@ -36,7 +36,7 @@ body {
 .lcc-button:focus,
 .lcc-button:hover {
     background: #777;
-    border-color: #777
+    background-color: #004a80;
 }
 
 .lcc-button.lcc-button--link {
@@ -270,4 +270,17 @@ button {
 .right-menu {
     /* display: none; */
     /* display: block; */
+}
+
+.button {
+    background-color: #004a80;
+    /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 2px;
+    height: 50px;
 }

@@ -95,7 +95,8 @@
                                             <div class="side-menu">
                                                         <ul>
                                                             <li class="mt-3 ">
-                                                                <a style="text-decoration: inherit; color: inherit;"  href="javascript:toggleDiv('div1');">
+                                                                <span class="left-color"></span>
+                                                                <a id="page1" style="text-decoration: inherit; color: inherit;"  href="javascript:toggleDiv('div1');">
                                                                     <span>ความเป็นส่วนตัวของคุณ</span>
                                                                 </a> 
 
@@ -166,7 +167,6 @@
                                                     <div class="lcc-modal__section mt-4">
                                                         <label for="lcc-checkbox-analytics" class="lcc-label">
                                                             <div class="form-check form-switch">
-                        
                                                             <input style="float: right;" class="form-check-input" type="checkbox" id="lcc-checkbox-analytics">
                                                             <span>คุกกี้เพื่อการวิเคราะห์และประเมินผลการใช้งาน (Performance Cookies)</span>
                                                             <p class="lcc-text mt-4">
@@ -186,11 +186,13 @@
                                                             <div class="form-check form-switch">
                                                             <input  style="float: right;" class="form-check-input" type="checkbox" id="lcc-checkbox-marketing">
                                                             <span>คุกกี้เพื่อการใช้งานเว็บไซต์ (Functional Cookies)</span>
+                
                                                             <p class="lcc-text mt-4">
                                                                 คุกกี้ประเภทนี้จะช่วยให้เว็บไซต์ของ สพร. จดจำตัวเลือกต่าง ๆ ที่ท่านได้ตั้งค่าไว้และช่วยให้เว็บไซต์ส่งมอบคุณสมบัติแล
                                                                 ะเนื้อหาเพิ่มเติมให้ตรงกับการใช้งานของท่านได้ เช่น ช่วยจดจำชื่อบัญชีผู้ใช้งานของท่าน หรือจดจำการเปลี่ยนแปลงการตั้
                                                                 งค่าขนาดฟอนต์หรือการตั้งค่าต่าง ๆ ของหน้าเพจซึ่งท่านสามารถปรับแต่งได้ การปิดการใช้งานคุกกี้ประเภทนี้อาจส่งผลให้เ
-                                                                ว็บไซต์ไม่สามารถทำงานได้อย่างสมบูรณ์</p>
+                                                                ว็บไซต์ไม่สามารถทำงานได้อย่างสมบูรณ์
+                                                            </p>
                                                         </div>
                                                         </label>
                                                     </div>
@@ -229,6 +231,7 @@
 
     
     <script>
+
         $('#btn-b').click(function(){
             $('.lcc-modal').css("-webkit-filter","blur(2px)");
     });
@@ -242,6 +245,11 @@
     $()
 }
 
+// sidebar a alway focus after click another element 
+$("a").focusin(function(){
+    $('a').css('background','');
+    $(this).css("background", "#fff"); 
+});
 
 
     </script>

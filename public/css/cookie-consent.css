@@ -218,34 +218,36 @@ li {
     height: 100%;
     top: 0;
     background: rgb(232, 228, 228);
-    width: 100%;
+    width: 110%;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     /* overflow: auto; */
 }
 
-.side-menu li {}
 
-.side-menu ul li:hover {
+/* .side-menu ul li:hover {
     background: white;
-}
-
-.side-menu a:hover {
-    background: white;
-}
+   
+} */
 
 
-/* .side-menu li {
-    font-size: 24px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-}
-
-.side-menu li:hover {
+/* .side-menu a:hover {
     background: white;
 } */
+
+.side-menu a {
+    display: block;
+    padding-left: 1rem;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.side-menu a:focus {
+    background: #fff;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
 
 .col {
     border-bottom: 1px solid #111;

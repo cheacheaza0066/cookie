@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('user/policy', 'cookie@index')->name('policy');
+
